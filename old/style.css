@@ -21,7 +21,6 @@ header{
 .logo{
     text-decoration: none;
     color:darkblue;
-    text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
 
@@ -65,7 +64,7 @@ section{
 .main h2 span{
     display: inline-block;
     margin-top: 10px;
-    color:blue;
+    color:rgb(19, 19, 241);
     font-size:3em ;
     font-weight: 600;
 
@@ -78,8 +77,8 @@ section{
     font-weight:700 ;
 }
 .main-btn{
-    color:#f0f0f0;
-    background-color: bisque;
+    color:darkblue;
+    background-color:whitesmoke;
     text-decoration: none;
     font-size:1.1em ;
     font-weight:600px ;
@@ -89,6 +88,7 @@ section{
     letter-spacing: 1px;
     border-radius:15px ;
     transition: 0.7s ease;
+    font-size: larger;
 
 }
 .main-btn:hover{
@@ -103,7 +103,7 @@ section{
 .title{
     display: flex;
     justify-content: center; 
-    color: blue;
+    color:rgb(3, 3, 88);
     margin-bottom: 30px;
     font-size: 2.2em; 
     font-weight:800 ;
@@ -130,7 +130,7 @@ section{
 
 }
 .card .icon{
-    color:blue ;
+    color:rgb(30, 30, 169) ;
     font-size:8em ;
     text-align: center ;
 
@@ -140,7 +140,7 @@ section{
     text-align: center;
 }
 .info h3{
-    color: blue; 
+    color:rgb(30, 30, 169); 
     font-size:1.2em ;
     font-weight:700 ;
     margin:10px ;
@@ -153,17 +153,26 @@ section{
 .projects .content{
     margin-top: 30px;
 }
+.projects .title{
+    color:rgb(19, 19, 241) ;
+}
+.projects .content{
+    display: flex ;
+    justify-content: center;
+    flex-direction: row ;
+    flex-wrap: wrap ;
+}
 .project-card {
     background-color: #f0f0f0;
     border: 1px solid #f0f0f0;
     min-height: 14em;
-    width: 23em;
+    width: 20em; 
     overflow: hidden;
     margin:20px ;
     border-radius:10px ;
     transition:0.7s ease ;
 
-} 
+}
 .project-card:hover {
     transform: scale(1.1);
 }
@@ -191,10 +200,10 @@ section{
 }
 .more-details{
     text-decoration: none;
-    color: blue;
+    color:rgb(30, 30, 169);
 }
 .more-details:hover{
-    color: blue;
+    color: rgb(30, 30, 169);
 
 }
 .contact {
@@ -222,6 +231,68 @@ section{
 .content .info h3{
     color: black;
 }
-#contact .content .info h3{
+.contact .content .info h3{
     color: darkblue;
+}
+@media(max-width:1023px){
+    header{
+        padding: 12px 20px;
+
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.1em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+        font-size: 1em;
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:641px){
+        body{
+            font-size: 12px;
+        }
+        .main-content h2{
+            font-size: 0.8em;
+        }
+        .main-content h3{
+            font-size: 1.4em;
+        }
+
+    }
+@media (max-width:300px) {
+    body{
+        font-size: 10px;
+    }
+    
+}
+.footer{
+    background-color: #000016;
+    color: #f0f0f0;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color:rgb(30, 30, 169);
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
 }
